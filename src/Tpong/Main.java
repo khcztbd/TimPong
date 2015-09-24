@@ -10,6 +10,7 @@ package Tpong;
 public class Main {
 
 	public static void main(String[] args) {
+		System.out.println("Starting Pong...");
 		MainWindow gameWindow = new MainWindow();
 		gameWindow.setVisible(true);
 		gameWindow.start();
