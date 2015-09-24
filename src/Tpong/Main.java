@@ -10,10 +10,10 @@ package Tpong;
 public class Main {
 
 	public static void main(String[] args) {
-		   System.out.println("Staring Pong");
-	       MainWindow gameWindow = new MainWindow();
-	       gameWindow.setVisible(true);
-	       gameWindow.start();
+		System.out.println("Staring Pong"); // new message
+		MainWindow gameWindow = new MainWindow();
+		gameWindow.setVisible(true);
+		gameWindow.start();
 	}
 
 }
