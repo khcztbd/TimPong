@@ -18,7 +18,8 @@ package Tpong;
 import java.awt.*;
 
 public class Ball extends GameItem {
-
+	
+	  private static final long serialVersionUID = 56992983;
 	  int RADIUS;
 
 	   Ball(Color color, 
@@ -55,6 +56,6 @@ public class Ball extends GameItem {
 	     // Reverse Yvelocity if the ball hits the sides
 	     if (Ypos <=20+WALLWIDTH || Ypos >= WINDOW_HEIGHT-RADIUS-WALLWIDTH) Yvelocity = 0 - Yvelocity;
 
-	     super.move(Xvelocity, Yvelocity);
+	     super.setLocation(Xvelocity, Yvelocity);
 	   }
 }

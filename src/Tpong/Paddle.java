@@ -13,6 +13,8 @@ import java.awt.*;
 
 public class Paddle extends GameItem {
 	
+	  private static final long serialVersionUID = 76812433;
+	
 	   int PADDLE_SPEED = 6;
 	   boolean moving_UP = false;
 	   boolean moving_DOWN = false;
@@ -47,7 +49,7 @@ public class Paddle extends GameItem {
 	      if (moving_UP && Ypos>20+WALLWIDTH) Ychange=-PADDLE_SPEED;
 	   	  if (moving_DOWN  && Ypos<WINDOW_HEIGHT-HEIGHT-WALLWIDTH) Ychange=PADDLE_SPEED; 
 
-	      super.move(Xchange, Ychange);
+	      super.setLocation(Xchange, Ychange);
 	     
 	   }
 }

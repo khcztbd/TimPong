@@ -10,6 +10,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class MainWindow extends Frame implements Runnable {
+	
+	private static final long serialVersionUID = 57230183;
+	
     // The timerThread must be declared, but initially set to null
     private Thread timerThread = null;
     Ball myBall;
@@ -34,8 +37,8 @@ public class MainWindow extends Frame implements Runnable {
     {
        public void keyPressed(KeyEvent e)
        {
-          if (e.getKeyCode()==e.VK_UP) myPaddle.moving_UP=true;
-          if (e.getKeyCode()==e.VK_DOWN) myPaddle.moving_DOWN=true;
+          if (e.getKeyCode()==KeyEvent.VK_UP) myPaddle.moving_UP=true;
+          if (e.getKeyCode()==KeyEvent.VK_DOWN) myPaddle.moving_DOWN=true;
         }
        
         public void keyReleased(KeyEvent e)

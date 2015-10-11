@@ -17,6 +17,8 @@ import java.awt.*;
  */
 
 public class GameItem extends Panel {
+	
+	   private static final long serialVersionUID = 56334921;
 
 	   int HEIGHT;
 	   int WIDTH;
@@ -56,7 +58,7 @@ public class GameItem extends Panel {
 	      setBounds(Xpos,Ypos,height, width); 
 	   }
 
-	   public void move(int Xchange, int Ychange)
+	   public void setLocation(int Xchange, int Ychange)
 	   {
 	     // update X and Y positions
 	   	    Xpos= Xpos + Xchange;
