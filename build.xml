@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="TimPong">
+
+<target name="clean">
+	<delete dir = "build"/>
+	<mkdir dir = "build"/> 
+</target>
+
+
+
+
+</project>
